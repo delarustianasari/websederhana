@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dela Rustiana Sari_2120019_WPII_2.6D</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #inputField {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #displayArea {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML content -->
+    <input type="text" id="inputField" placeholder="Enter text...">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea"></div>
+
+    <!-- JavaScript code-->
+    <script>
+        function displayText() {
+            // Get the input value
+            var inputText =document.getElementById("inputField").value;
+
+            var displayArea =document.getElementById("displayArea");
+            displayArea.innerText = inputText;
+            
+        }
+    </script>
+    
+</body>
+</html>
